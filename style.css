@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+*, ::after, ::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+--Bright-orange: hsl(31, 77%, 52%);
+--Dark-cyan: hsl(184, 100%, 22%);
+--Very-dark-cyan: hsl(179, 100%, 13%);
+}
+
+html{
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    font-size: 10px;
+    overflow: scroll;
+
+}
+
+/* font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif; */
+
+body{
+    width: 100%;
+    height: 100%;
+    font-family: 'Lexend Deca', sans-serif; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.cars{
+    max-width: 60rem;
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+h1{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+    padding-bottom: 2rem;
+}
+.sedan{
+    background: var(--Bright-orange);
+    padding: 3rem 2rem;
+    color: #fff;
+    border-radius: 5px 0px 0px 5px;
+}
+p{
+    font-size: 1rem;
+    opacity: 70%;
+    padding-right: 2rem;
+    line-height: 1.5rem;
+    padding-bottom: 4rem;
+}
+.btn{
+    border: none;
+    background: #fff;
+    border-radius: 20px;
+    padding: 1rem 2rem;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.btn-orange{
+    color: var(--Bright-orange);
+}
+.btn-cyan{
+    color: var(--Dark-cyan);
+}
+.btn-dark-cyan{
+    color: var(--Very-dark-cyan);
+}
+.suvs{
+    background: var(--Dark-cyan);
+    padding: 3rem 2rem;
+    color: #fff;
+    border-radius: 5px 0px 0px 5px;
+}
+.luxury{
+    background: var(--Very-dark-cyan);
+    padding: 3rem 2rem;
+    color: #fff;
+    border-radius: 5px 0px 0px 5px;
+}
+
+img{
+    width: 5rem;
+    margin-bottom: 2rem;
+}
+
+
+.attribution{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    bottom: 1rem;
+    color: var(--Bright-orange);
+    padding: 3rem 0;
+}
+
+
+@media screen and (max-width:768px) {
+    .cars{
+        flex-direction: column;
+        padding: 0 4rem;
+        margin-bottom: 4rem;
+    }
+    body{
+        min-height: 100vh;
+        margin-bottom: 3rem;
+    }
+}
